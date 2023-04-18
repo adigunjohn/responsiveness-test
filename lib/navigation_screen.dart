@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsiveness_test/fourth_screen.dart';
 import 'package:responsiveness_test/test_screen.dart';
 import 'package:responsiveness_test/test_screen2.dart';
 
@@ -22,6 +23,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           TestScreen(),
           TestScreenSec(),
           AnotherScreen(),
+          // FourthScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -34,7 +36,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_rounded), label: 'Chat'),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: 'Store')
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: 'Store'),
+          // BottomNavigationBarItem(icon: Icon(Icons.call_rounded), label: 'Calls'),
         ],
       ),
     );

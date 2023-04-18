@@ -11,7 +11,7 @@ class TestScreen extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 10.0,),
-            Expanded(
+            Flexible(
               child: Container(
                 height: 550,
                 width: 400,
