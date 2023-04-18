@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:responsiveness_test/test_screen.dart';
 import 'package:responsiveness_test/test_screen2.dart';
 
+import 'another_testscreen.dart';
+
 class NavigationScreen extends StatefulWidget {
 
   @override
@@ -19,6 +21,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
         children: const [
           TestScreen(),
           TestScreenSec(),
+          AnotherScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -30,7 +33,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
         },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_rounded), label: 'Chat')
+          BottomNavigationBarItem(icon: Icon(Icons.chat_bubble_rounded), label: 'Chat'),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: 'Store')
         ],
       ),
     );
