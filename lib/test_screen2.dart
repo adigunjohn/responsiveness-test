@@ -15,19 +15,19 @@ class TestScreenSec extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.only(top: 10.0),
                     child: Container(
+                      width: MediaQuery.of(context).size.width - 10,
                       // height: 550,
                       // width: 400,
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 190,vertical: 228),
-                        child: Column(
-                          children: [
-                            Text('kbj'),
-                            Text('kbj'),
-                            Text('kbj'),
-                            Text('kbj'),
-                            Text('kbj'),
-                          ],
-                        ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          //padding: const EdgeInsets.symmetric(horizontal: 190,vertical: 228),
+                          Text('kbj'),
+                          Text('kbj'),
+                          Text('kbj'),
+                          Text('kbj'),
+                          Text('kbj'),
+                        ],
                       ),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15.0),
@@ -57,10 +57,10 @@ class TestScreenSec extends StatelessWidget {
                       child: Text('Buy Now'),),
                     // height: 75.0,
                     // minWidth: 400,
-                  minWidth: MediaQuery.of(context).size.width - 32,
+                  minWidth: MediaQuery.of(context).size.width - 20,
                     color: Colors.blueAccent,
                   ),
-                SizedBox(height: 10.0,),
+                SizedBox(height: 25.0,),
               ],
             )
         )

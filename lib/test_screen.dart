@@ -11,22 +11,24 @@ class TestScreen extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 10.0,),
-            Container(
-              height: 550,
-              width: 400,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+            Expanded(
+              child: Container(
+                height: 550,
+                width: 400,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('kbj'),
-            Text('kbj'),
-            Text('kbj'),
-            Text('kbj'),
-            Text('kbj'),
+              Text('kbj'),
+              Text('kbj'),
+              Text('kbj'),
+              Text('kbj'),
+              Text('kbj'),
           ],
         ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15.0),
-                color: Colors.grey
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  color: Colors.grey
+                ),
               ),
             ),
             SizedBox(height: 15.0,),
